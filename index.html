@@ -1,0 +1,3020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Engagement Invitation | Afnan &amp; Alfia</title>
+  <meta name="description" content="You are cordially invited to celebrate the blessed Engagement of Afnan & Alfia on Friday, 2 October 2026 at Bride Home Dar Al Naseer, Nanjangud.">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="The Engagement of Afnan &amp; Alfia">
+  <meta property="og:description" content="Friday, 2 October 2026 · 12:09 PM · Bride Home Dar Al Naseer, Nanjangud">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Bodoni Moda, Cormorant Garamond, Playfair Display, Manrope, and strictly Noto Kufi Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS VARIABLES & LUXURY ALTERNATING THEME SYSTEM
+       Strictly Rose Red (#C0264D) and Pure White (#FFFFFF) - Zero Burgundy/Maroon
+       ========================================================================== */
+    :root {
+      /* Rose Red Tones (Wedding Crimson & Radiant Rose) */
+      --rose-primary: #C0264D;
+      --rose-vibrant: #D42E57;
+      --rose-deep: #9E1638;
+      --rose-soft: #FCEBF0;
+      --rose-petal-light: #FFD4E0;
+      --rose-gradient-main: linear-gradient(165deg, #C72951 0%, #AC1B3F 65%, #921333 100%);
+      --rose-gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+
+      /* Pure White & Ivory Surfaces */
+      --white-pure: #FFFFFF;
+      --white-ivory: #FDFBF9;
+      --white-warm: #FAF5F0;
+      --white-card-bg: #FFFFFF;
+      --white-border: rgba(192, 38, 77, 0.14);
+      --white-border-subtle: rgba(217, 150, 132, 0.28);
+
+      /* Rose-Gold & Champagne Foil */
+      --rosegold-primary: #D99684;
+      --rosegold-light: #F7D6CD;
+      --rosegold-glow: rgba(217, 150, 132, 0.45);
+      --rosegold-gradient: linear-gradient(135deg, #F8DDD5 0%, #D99684 50%, #F5C6B8 100%);
+      --rosegold-text-gradient: linear-gradient(135deg, #9E1638 0%, #C0264D 50%, #D99684 100%);
+
+      /* Typography Tokens */
+      --font-display: 'Bodoni Moda', 'Playfair Display', Georgia, serif;
+      --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+      --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-arabic: 'Noto Kufi Arabic', sans-serif;
+
+      /* Elevation & Shadows */
+      --shadow-white-slide: 0 15px 40px rgba(158, 22, 56, 0.08);
+      --shadow-red-slide: 0 18px 45px rgba(50, 4, 15, 0.3);
+      --shadow-rosegold-glow: 0 0 25px rgba(217, 150, 132, 0.4);
+
+      /* Border Radii */
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 9999px;
+
+      /* Animation Easing */
+      --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ==========================================================================
+       RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--white-pure);
+      color: #2C141D;
+    }
+
+    body {
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      background: #F4ECE6;
+      color: #2C141D;
+      line-height: 1.6;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+      background: var(--rose-primary);
+      color: #FFF;
+    }
+
+    /* Ambient Canvas for Floating Petals across ALL slides */
+    #fx-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    /* YouTube Audio Stream Container (Offscreen) */
+    #ytAudioPlayer {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Master Container - Fully responsive from mobile 9:16 to tablets & laptops */
+    .app-container {
+      width: 100%;
+      max-width: 540px;
+      margin: 0 auto;
+      position: relative;
+      background: var(--white-pure);
+      box-shadow: 0 0 60px rgba(110, 16, 40, 0.15);
+      overflow: hidden;
+      min-height: 100vh;
+      transition: max-width 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    /* Tablet breakpoint (640px - 1024px) */
+    @media (min-width: 640px) {
+      body {
+        padding: 24px 0;
+        background: radial-gradient(circle at 50% 25%, #FAF2ED 0%, #EBDCD2 70%, #DECAC0 100%);
+      }
+      .app-container {
+        max-width: 620px;
+        border-radius: 26px;
+        border: 1px solid rgba(217, 150, 132, 0.38);
+        box-shadow: 0 20px 70px rgba(110, 16, 40, 0.14);
+      }
+    }
+
+    /* Laptop & Desktop breakpoint (1025px and up) */
+    @media (min-width: 1025px) {
+      body {
+        padding: 36px 0;
+        background: radial-gradient(circle at 50% 20%, #FFF6F3 0%, #EDE0D6 60%, #DFCEC2 100%);
+      }
+      .app-container {
+        max-width: 720px;
+        border-radius: 32px;
+        border: 1px solid rgba(217, 150, 132, 0.48);
+        box-shadow: 0 30px 90px -15px rgba(90, 12, 32, 0.2), 0 0 1px rgba(217, 150, 132, 0.8);
+      }
+    }
+
+    /* ==========================================================================
+       CINEMATIC FULLSCREEN OPENING SCREEN (CLEAN WHITE + ROSE-GOLD)
+       ========================================================================== */
+    .curtain-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: linear-gradient(160deg, #FFFFFF 0%, #FFF8F9 50%, #FCEFF2 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+      text-align: center;
+      transition: transform 1.2s var(--ease-cinematic), opacity 1s var(--ease-cinematic), filter 1s ease;
+      overflow: hidden;
+    }
+
+    .curtain-modal.unveiled {
+      transform: translateY(-100%);
+      opacity: 0;
+      filter: blur(8px);
+      pointer-events: none;
+    }
+
+    /* Subtle Islamic Rosette Background on Curtain */
+    .curtain-bg-ornament {
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      border: 1px solid rgba(217, 150, 132, 0.18);
+      pointer-events: none;
+      animation: rotateCurtainBg 60s linear infinite;
+    }
+
+    @keyframes rotateCurtainBg {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .curtain-content {
+      position: relative;
+      z-index: 2;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Monogram Seal */
+    .curtain-seal-wrap {
+      position: relative;
+      width: 96px;
+      height: 96px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .curtain-seal-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      animation: spinCurtainSeal 40s linear infinite;
+    }
+
+    @keyframes spinCurtainSeal {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .curtain-seal-inner {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #FFF;
+      border: 1px solid var(--rosegold-primary);
+      box-shadow: 0 4px 20px rgba(192, 38, 77, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: var(--rose-primary);
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+    .curtain-badge {
+      font-family: var(--font-body);
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 5px;
+      color: var(--rose-primary);
+      margin-bottom: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .curtain-title {
+      font-family: var(--font-display);
+      font-size: 2.35rem;
+      font-weight: 400;
+      color: #2A0914;
+      line-height: 1.25;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .curtain-title .ampersand {
+      font-family: var(--font-heading);
+      font-style: italic;
+      color: var(--rose-vibrant);
+      font-weight: 300;
+      margin: 0 4px;
+    }
+
+    .curtain-subline {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .curtain-date-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 18px;
+      background: #FFF;
+      border: 1px solid var(--rosegold-primary);
+      border-radius: var(--radius-pill);
+      color: var(--rose-deep);
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(192, 38, 77, 0.08);
+      margin-bottom: 34px;
+    }
+
+    /* Open Invitation Button */
+    .curtain-open-btn {
+      background: var(--rose-primary);
+      color: #FFF;
+      font-family: var(--font-body);
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border: 1px solid var(--rosegold-light);
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(192, 38, 77, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+      transition: all 0.35s var(--ease-cinematic);
+    }
+
+    .curtain-open-btn:hover, .curtain-open-btn:focus {
+      background: var(--rose-vibrant);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(192, 38, 77, 0.45);
+    }
+
+    .curtain-open-btn svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      transition: transform 0.3s ease;
+    }
+
+    .curtain-open-btn:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* ==========================================================================
+       FLOATING SOUND CONTROLLER (ZERO EMOJI, PROFESSIONAL SVG)
+       ========================================================================== */
+    .floating-audio-ctrl {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(192, 38, 77, 0.25);
+      border-radius: var(--radius-pill);
+      padding: 8px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+      transition: all 0.3s var(--ease-cinematic);
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rose-deep);
+    }
+
+    .floating-audio-ctrl:hover {
+      transform: scale(1.04);
+      border-color: var(--rose-primary);
+    }
+
+    .floating-audio-ctrl .disc-icon {
+      width: 18px;
+      height: 18px;
+      stroke: var(--rose-primary);
+      stroke-width: 1.8;
+      fill: none;
+    }
+
+    .floating-audio-ctrl.playing .disc-icon {
+      animation: spinAudioDisc 4s linear infinite;
+    }
+
+    @keyframes spinAudioDisc {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .audio-equalizer {
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+      height: 12px;
+    }
+
+    .eq-bar {
+      width: 2px;
+      background: var(--rose-primary);
+      border-radius: 1px;
+      height: 4px;
+      transition: height 0.2s ease;
+    }
+
+    .floating-audio-ctrl.playing .eq-bar:nth-child(1) { animation: eqPulse 0.8s ease infinite alternate; }
+    .floating-audio-ctrl.playing .eq-bar:nth-child(2) { animation: eqPulse 1.1s ease infinite alternate 0.2s; }
+    .floating-audio-ctrl.playing .eq-bar:nth-child(3) { animation: eqPulse 0.9s ease infinite alternate 0.4s; }
+
+    @keyframes eqPulse {
+      0% { height: 3px; }
+      100% { height: 12px; }
+    }
+
+    /* Navigation Dots */
+    .nav-dots-container {
+      position: fixed;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 90;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+
+    .nav-dots-container.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .nav-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba(192, 38, 77, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .nav-dot.active {
+      height: 20px;
+      border-radius: 4px;
+      background: var(--rose-primary);
+      box-shadow: 0 0 10px rgba(192, 38, 77, 0.6);
+    }
+
+    /* ==========================================================================
+       SLIDE SYSTEM (STRICT ALTERNATING WHITE / RED)
+       ========================================================================== */
+    .slide {
+      width: 100%;
+      padding: 54px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.6s ease;
+    }
+
+    /* Compact smart spacing for 9:16 viewports */
+    @media (max-width: 480px) {
+      .slide {
+        padding: 44px 18px;
+      }
+    }
+
+    /* SLIDE COLOR 1: WHITE */
+    .slide-white {
+      background-color: var(--white-pure);
+      color: #2C141D;
+    }
+
+    .slide-white .slide-eyebrow {
+      color: var(--rose-primary);
+    }
+
+    .slide-white .slide-heading {
+      color: #260913;
+    }
+
+    .slide-white .slide-subtitle {
+      color: #6C4250;
+    }
+
+    .slide-white .ornament-line {
+      background: linear-gradient(90deg, transparent, rgba(192, 38, 77, 0.3), transparent);
+    }
+
+    .slide-white .ornament-icon {
+      stroke: var(--rose-primary);
+      fill: none;
+    }
+
+    /* SLIDE COLOR 2: ROSE RED */
+    .slide-red {
+      background: var(--rose-gradient-main);
+      color: #FFFFFF;
+    }
+
+    .slide-red .slide-eyebrow {
+      color: var(--rosegold-light);
+    }
+
+    .slide-red .slide-heading {
+      color: #FFFFFF;
+      text-shadow: 0 2px 14px rgba(60, 4, 16, 0.3);
+    }
+
+    .slide-red .slide-subtitle {
+      color: #FCE8EE;
+    }
+
+    .slide-red .ornament-line {
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    }
+
+    .slide-red .ornament-icon {
+      stroke: var(--rosegold-light);
+      fill: none;
+    }
+
+    /* Common Section Typography */
+    .slide-eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      letter-spacing: 4.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .slide-heading {
+      font-family: var(--font-display);
+      font-size: 1.95rem;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .slide-subtitle {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.05rem;
+      max-width: 400px;
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+
+    /* Refined Islamic Vector Divider */
+    .islamic-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 260px;
+      margin: 0 auto 24px;
+    }
+
+    .islamic-divider .ornament-line {
+      height: 1px;
+      flex: 1;
+    }
+
+    .islamic-divider .ornament-center {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Glass Cards */
+    .content-card {
+      width: 100%;
+      max-width: 440px;
+      border-radius: var(--radius-lg);
+      padding: 26px 20px;
+      position: relative;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .slide-white .content-card {
+      background: #FFFFFF;
+      border: 1px solid var(--white-border);
+      box-shadow: 0 10px 30px rgba(192, 38, 77, 0.06), 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .slide-red .content-card {
+      background: var(--rose-gradient-card);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 12px 35px rgba(50, 4, 15, 0.2);
+    }
+
+    /* ==========================================================================
+       SLIDE 1: HERO (WHITE)
+       ========================================================================== */
+    #hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 60px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 16px;
+      border-radius: var(--radius-pill);
+      background: var(--rose-soft);
+      border: 1px solid rgba(192, 38, 77, 0.2);
+      color: var(--rose-deep);
+      font-size: 0.74rem;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--rose-primary);
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .hero-names-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: 3.1rem;
+      line-height: 1.12;
+      color: #23060E;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .hero-ampersand-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 4px 0;
+    }
+
+    .hero-ampersand-box .line {
+      width: 36px;
+      height: 1px;
+      background: var(--rosegold-primary);
+    }
+
+    .hero-ampersand {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 2.2rem;
+      color: var(--rose-primary);
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .hero-event-desc {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--rose-primary);
+      margin-bottom: 24px;
+    }
+
+    .hero-date-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: #FFFFFF;
+      border: 1px solid rgba(217, 150, 132, 0.4);
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 6px 20px rgba(192, 38, 77, 0.08);
+      margin-bottom: 32px;
+    }
+
+    .hero-date-banner .date-text {
+      font-family: var(--font-body);
+      font-size: 0.86rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #2C141D;
+    }
+
+    .hero-date-banner .date-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--rose-primary);
+    }
+
+    .hero-scroll-cue {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .hero-scroll-cue:hover {
+      color: var(--rose-primary);
+    }
+
+    .hero-scroll-cue svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      animation: bounceArrow 2s infinite ease-in-out;
+    }
+
+    @keyframes bounceArrow {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(5px); }
+      60% { transform: translateY(3px); }
+    }
+
+    /* ==========================================================================
+       SLIDE 2: ISLAMIC SECTION (ROSE RED - NOTO KUFI ARABIC)
+       ========================================================================== */
+    .arabic-bismillah {
+      font-family: var(--font-arabic);
+      font-size: 1.45rem;
+      line-height: 1.7;
+      color: #FFFFFF;
+      margin-bottom: 18px;
+      text-shadow: 0 2px 10px rgba(50, 4, 15, 0.4);
+      direction: rtl;
+    }
+
+    .mihrab-arch {
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 120px 120px var(--radius-lg) var(--radius-lg);
+      padding: 34px 22px 28px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(50, 4, 15, 0.25);
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .arabic-dua-text {
+      font-family: var(--font-arabic);
+      font-size: 1.25rem;
+      line-height: 1.8;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      direction: rtl;
+    }
+
+    .dua-english {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.08rem;
+      color: #FFE6ED;
+      line-height: 1.55;
+      margin-bottom: 22px;
+    }
+
+    .couple-role-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .couple-role-item .name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+
+    .couple-role-item .role {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--rosegold-light);
+      font-weight: 600;
+    }
+
+    .couple-role-divider {
+      width: 1px;
+      height: 28px;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ==========================================================================
+       SLIDE 3: DATE SECTION (WHITE)
+       ========================================================================== */
+    .date-display-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .date-grand-day {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      font-weight: 500;
+      color: var(--rose-primary);
+      line-height: 1;
+      letter-spacing: 1px;
+    }
+
+    .date-grand-month {
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #260913;
+      margin-top: 4px;
+    }
+
+    .date-grand-weekday {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+
+    /* Live Countdown Grid */
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto 24px;
+    }
+
+    .countdown-cell {
+      background: var(--white-pure);
+      border: 1px solid rgba(192, 38, 77, 0.18);
+      border-radius: var(--radius-md);
+      padding: 12px 6px;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(192, 38, 77, 0.06);
+    }
+
+    .countdown-cell .number {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--rose-primary);
+      line-height: 1.1;
+      display: block;
+    }
+
+    .countdown-cell .label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #7A4E5C;
+      font-weight: 700;
+      margin-top: 4px;
+      display: block;
+    }
+
+    .calendar-mockup {
+      background: #FFF;
+      border: 1px solid rgba(217, 150, 132, 0.35);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+    }
+
+    .cal-mockup-header {
+      font-size: 0.78rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rose-primary);
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(192, 38, 77, 0.12);
+      margin-bottom: 10px;
+    }
+
+    .cal-days-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 4px;
+      font-size: 0.72rem;
+      color: #6C4250;
+    }
+
+    .cal-weekday-label {
+      font-weight: 700;
+      color: var(--rose-deep);
+      padding-bottom: 4px;
+    }
+
+    .cal-date-num {
+      padding: 4px 0;
+      border-radius: 4px;
+    }
+
+    .cal-date-num.event-highlight {
+      background: var(--rose-primary);
+      color: #FFF;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(192, 38, 77, 0.4);
+    }
+
+    .btn-add-cal {
+      background: #FFFFFF;
+      color: var(--rose-primary);
+      border: 1px solid var(--rose-primary);
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-add-cal:hover {
+      background: var(--rose-soft);
+      transform: translateY(-2px);
+    }
+
+    .btn-add-cal svg {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    /* ==========================================================================
+       SLIDE 4: TIME SECTION (ROSE RED)
+       ========================================================================== */
+    .time-hero-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .time-icon-circle {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+    }
+
+    .time-icon-circle svg {
+      width: 36px;
+      height: 36px;
+      stroke: #FFFFFF;
+      stroke-width: 1.8;
+      fill: none;
+    }
+
+    .time-main-val {
+      font-family: var(--font-display);
+      font-size: 3.4rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.1;
+      letter-spacing: 1px;
+      text-shadow: 0 4px 18px rgba(50, 4, 15, 0.3);
+      margin-bottom: 8px;
+    }
+
+    .time-badge-desc {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 16px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       SLIDE 5: VENUE SECTION (WHITE)
+       ========================================================================== */
+    .venue-card {
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+    }
+
+    .venue-pin-wrap {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--rose-soft);
+      border: 1px solid rgba(192, 38, 77, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      color: var(--rose-primary);
+    }
+
+    .venue-pin-wrap svg {
+      width: 26px;
+      height: 26px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .venue-name-bold {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      color: #23060E;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .venue-addr-str {
+      font-size: 0.95rem;
+      color: #593340;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .venue-btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .btn-get-directions {
+      background: var(--rose-primary);
+      color: #FFF;
+      padding: 15px 32px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 320px;
+      box-shadow: 0 8px 25px rgba(192, 38, 77, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-get-directions:hover {
+      background: var(--rose-vibrant);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(192, 38, 77, 0.4);
+    }
+
+    .btn-get-directions svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .btn-copy-address {
+      background: transparent;
+      border: 1px solid rgba(192, 38, 77, 0.3);
+      color: var(--rose-deep);
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-body);
+      font-size: 0.74rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.25s ease;
+    }
+
+    .btn-copy-address:hover {
+      background: var(--rose-soft);
+      border-color: var(--rose-primary);
+    }
+
+    .btn-copy-address svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    /* ==========================================================================
+       SLIDE 6: EVENT / TIMELINE SECTION (ROSE RED)
+       ========================================================================== */
+    .timeline-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      padding-left: 28px;
+      text-align: left;
+    }
+
+    .timeline-line-track {
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 8px;
+      width: 2px;
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .timeline-step {
+      position: relative;
+      margin-bottom: 26px;
+    }
+
+    .timeline-step:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-node {
+      position: absolute;
+      left: -28px;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 3px solid var(--rose-deep);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+    }
+
+    .timeline-time-badge {
+      font-family: var(--font-body);
+      font-size: 0.74rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rosegold-light);
+      margin-bottom: 4px;
+    }
+
+    .timeline-title {
+      font-family: var(--font-display);
+      font-size: 1.18rem;
+      color: #FFFFFF;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .timeline-desc {
+      font-size: 0.82rem;
+      color: #FCE8EE;
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       SLIDE 7: RSVP SECTION (WHITE)
+       ========================================================================== */
+    .rsvp-form-container {
+      width: 100%;
+      max-width: 420px;
+      text-align: left;
+    }
+
+    .form-field-group {
+      margin-bottom: 16px;
+    }
+
+    .form-field-label {
+      display: block;
+      font-size: 0.74rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rose-deep);
+      margin-bottom: 6px;
+    }
+
+    .form-input-ctrl, .form-select-ctrl, .form-textarea-ctrl {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid rgba(192, 38, 77, 0.22);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: #2C141D;
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .form-input-ctrl:focus, .form-select-ctrl:focus, .form-textarea-ctrl:focus {
+      border-color: var(--rose-primary);
+      box-shadow: 0 0 10px rgba(192, 38, 77, 0.2);
+    }
+
+    .btn-submit-whatsapp {
+      background: #25D366;
+      color: #FFFFFF;
+      font-family: var(--font-body);
+      font-size: 0.84rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      border-radius: var(--radius-pill);
+      padding: 16px 28px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .btn-submit-whatsapp:hover {
+      background: #20BA59;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-submit-whatsapp svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* ==========================================================================
+       SLIDE 8: WEDDING WISHES (ROSE RED)
+       ========================================================================== */
+    .wishes-input-box {
+      width: 100%;
+      max-width: 420px;
+      text-align: left;
+      margin-bottom: 22px;
+    }
+
+    .wishes-input-box .form-field-label {
+      color: #FFFFFF;
+    }
+
+    .wishes-input-box .form-input-ctrl, .wishes-input-box .form-textarea-ctrl {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: #FFFFFF;
+    }
+
+    .wishes-input-box .form-input-ctrl::placeholder,
+    .wishes-input-box .form-textarea-ctrl::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .wishes-input-box .form-input-ctrl:focus,
+    .wishes-input-box .form-textarea-ctrl:focus {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: #FFFFFF;
+    }
+
+    .btn-send-wishes {
+      background: #FFFFFF;
+      color: var(--rose-deep);
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      border-radius: var(--radius-pill);
+      padding: 13px 30px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .btn-send-wishes:hover {
+      background: var(--rosegold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-send-wishes svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    .wishes-live-stream {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 420px;
+      text-align: left;
+    }
+
+    .wish-bubble {
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      animation: fadeInWish 0.5s ease forwards;
+    }
+
+    @keyframes fadeInWish {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .wish-author-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .wish-author-name {
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .wish-timestamp {
+      font-size: 0.68rem;
+      color: var(--rosegold-light);
+      letter-spacing: 1px;
+    }
+
+    .wish-text-content {
+      font-size: 0.85rem;
+      color: #FDE8EE;
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       SLIDE 9: BEST WISHES 1 (WHITE - MANGALYA JEWELS)
+       ========================================================================== */
+    .compliments-card-white {
+      border: 1px solid var(--white-border);
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 28px 20px;
+      width: 100%;
+      max-width: 420px;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(192, 38, 77, 0.06);
+    }
+
+    .firm-name {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: var(--rose-primary);
+      font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .firm-address {
+      font-size: 0.88rem;
+      color: #5C3844;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .firm-divider {
+      width: 40px;
+      height: 1.5px;
+      background: var(--rosegold-primary);
+      margin: 0 auto 16px;
+    }
+
+    .personal-names {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: #260913;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SLIDE 10: ADDITIONAL BEST WISHES 2 (ROSE RED - GOLDEN MEAT STALL)
+       ========================================================================== */
+    .compliments-card-red {
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-lg);
+      padding: 28px 20px;
+      width: 100%;
+      max-width: 420px;
+      position: relative;
+      box-shadow: 0 12px 35px rgba(50, 4, 15, 0.25);
+    }
+
+    .compliments-card-red .firm-name {
+      color: #FFFFFF;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .compliments-card-red .firm-address {
+      color: #FCE6EC;
+    }
+
+    .compliments-card-red .personal-names {
+      color: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       SLIDE 11: FINAL CLOSING (WHITE)
+       ========================================================================== */
+    #closing {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .closing-thank-you {
+      font-family: var(--font-display);
+      font-size: 2.6rem;
+      color: var(--rose-primary);
+      font-weight: 400;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .closing-quote {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.22rem;
+      color: #6C4250;
+      max-width: 380px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+
+    .closing-couple {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: #23060E;
+      margin-bottom: 6px;
+    }
+
+    .closing-date-tag {
+      font-size: 0.82rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--rose-deep);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .closing-dua-sign {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--rosegold-primary);
+      margin-bottom: 28px;
+    }
+
+    .btn-return-top {
+      background: var(--white-pure);
+      border: 1px solid var(--rose-primary);
+      color: var(--rose-primary);
+      padding: 12px 26px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-return-top:hover {
+      background: var(--rose-soft);
+      transform: translateY(-2px);
+    }
+
+    .btn-return-top svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    /* ==========================================================================
+       CREATOR / DESIGNER CREDITS (SANU FRAMEART)
+       ========================================================================== */
+    .creator-credits-card {
+      margin-top: 36px;
+      width: 100%;
+      max-width: 440px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(192, 38, 77, 0.18);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px 22px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(192, 38, 77, 0.07);
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .creator-credits-card::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 25%;
+      right: 25%;
+      height: 2px;
+      background: var(--rosegold-gradient);
+    }
+
+    .creator-eyebrow {
+      font-size: 0.68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rose-deep);
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .creator-brand-name {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: #23060E;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+    .creator-contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    @media (min-width: 520px) {
+      .creator-contact-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+    }
+
+    .creator-link-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 14px;
+      background: var(--white-pure);
+      border: 1px solid rgba(192, 38, 77, 0.2);
+      border-radius: var(--radius-pill);
+      color: #2C141D;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      transition: all 0.25s var(--ease-cinematic);
+    }
+
+    .creator-link-pill:hover, .creator-link-pill:focus {
+      background: var(--rose-soft);
+      border-color: var(--rose-primary);
+      color: var(--rose-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(192, 38, 77, 0.15);
+    }
+
+    .creator-link-pill svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .creator-link-pill.ig-link svg {
+      stroke: #E1306C;
+    }
+
+    .creator-link-pill.wa-link svg {
+      fill: #25D366;
+    }
+
+    .creator-link-pill.call-link svg {
+      stroke: var(--rose-primary);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE REFINEMENTS ACROSS ALL SCREENS (MOBILE, TABLET, LAPTOP)
+       ========================================================================== */
+    @media (min-width: 768px) {
+      .slide {
+        padding: 64px 32px;
+      }
+      .content-card, 
+      .compliments-card-white, 
+      .compliments-card-red, 
+      .mihrab-arch, 
+      .timeline-container, 
+      .venue-card, 
+      .rsvp-form-container, 
+      .wishes-input-box, 
+      .wishes-live-stream, 
+      .creator-credits-card {
+        max-width: 520px;
+      }
+      .hero-name {
+        font-size: 3.6rem;
+      }
+      .slide-heading {
+        font-size: 2.25rem;
+      }
+      .date-grand-day {
+        font-size: 4.6rem;
+      }
+      .time-main-val {
+        font-size: 3.8rem;
+      }
+      .countdown-grid {
+        max-width: 440px;
+        gap: 14px;
+      }
+      .countdown-cell {
+        padding: 14px 8px;
+      }
+      .countdown-cell .number {
+        font-size: 1.65rem;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .slide {
+        padding: 72px 42px;
+      }
+      .content-card, 
+      .compliments-card-white, 
+      .compliments-card-red, 
+      .mihrab-arch, 
+      .timeline-container, 
+      .venue-card, 
+      .rsvp-form-container, 
+      .wishes-input-box, 
+      .wishes-live-stream, 
+      .creator-credits-card {
+        max-width: 580px;
+      }
+      .hero-name {
+        font-size: 4rem;
+      }
+      .slide-heading {
+        font-size: 2.45rem;
+      }
+      .date-grand-day {
+        font-size: 5rem;
+      }
+      .time-main-val {
+        font-size: 4.2rem;
+      }
+      .floating-audio-ctrl {
+        top: 28px;
+        right: 28px;
+        padding: 10px 18px;
+        font-size: 0.78rem;
+      }
+      .nav-dots-container {
+        right: 24px;
+        gap: 12px;
+      }
+      .nav-dot {
+        width: 8px;
+        height: 8px;
+      }
+      .nav-dot.active {
+        height: 24px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .slide {
+        padding: 38px 12px;
+      }
+      .hero-name {
+        font-size: 2.5rem;
+      }
+      .slide-heading {
+        font-size: 1.65rem;
+      }
+      .date-grand-day {
+        font-size: 3.2rem;
+      }
+      .time-main-val {
+        font-size: 2.8rem;
+      }
+      .countdown-grid {
+        gap: 6px;
+      }
+      .countdown-cell {
+        padding: 10px 4px;
+      }
+      .countdown-cell .number {
+        font-size: 1.25rem;
+      }
+      .curtain-title {
+        font-size: 1.9rem;
+      }
+    }
+
+    /* Toast Notification Alert */
+    .toast-pill {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(70px);
+      background: #23060E;
+      color: #FFFFFF;
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--rosegold-primary);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      letter-spacing: 1px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      z-index: 10000;
+      opacity: 0;
+      transition: all 0.35s var(--ease-cinematic);
+      pointer-events: none;
+    }
+
+    .toast-pill.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Animated Petal & Sparkle Canvas -->
+  <canvas id="fx-canvas"></canvas>
+
+  <!-- YouTube Audio Player Element (Offscreen) -->
+  <div id="ytAudioPlayer"></div>
+
+  <!-- Floating Audio Control (Zero Emoji, Clean Line SVG) -->
+  <button class="floating-audio-ctrl" id="audioToggleBtn" title="Toggle Wedding Nasheed" aria-label="Toggle Wedding Nasheed">
+    <svg class="disc-icon" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"/>
+      <circle cx="12" cy="12" r="3"/>
+    </svg>
+    <div class="audio-equalizer" aria-hidden="true">
+      <div class="eq-bar"></div>
+      <div class="eq-bar"></div>
+      <div class="eq-bar"></div>
+    </div>
+    <span id="audioStatusText">Music</span>
+  </button>
+
+  <!-- Side Navigation Dots -->
+  <nav class="nav-dots-container" id="navDots" aria-label="Navigation">
+    <div class="nav-dot active" data-target="hero" title="Hero"></div>
+    <div class="nav-dot" data-target="islamic" title="Islamic"></div>
+    <div class="nav-dot" data-target="date" title="Date"></div>
+    <div class="nav-dot" data-target="time" title="Time"></div>
+    <div class="nav-dot" data-target="venue" title="Venue"></div>
+    <div class="nav-dot" data-target="timeline" title="Timeline"></div>
+    <div class="nav-dot" data-target="rsvp" title="RSVP"></div>
+    <div class="nav-dot" data-target="wishes" title="Wishes"></div>
+    <div class="nav-dot" data-target="best-wishes-1" title="Best Wishes"></div>
+    <div class="nav-dot" data-target="best-wishes-2" title="Compliments"></div>
+    <div class="nav-dot" data-target="closing" title="Closing"></div>
+  </nav>
+
+  <!-- ==========================================================================
+       CINEMATIC FULLSCREEN OPENING CURTAIN (CLEAN WHITE + ROSE GOLD)
+       ========================================================================== -->
+  <div class="curtain-modal" id="curtainModal">
+    <div class="curtain-bg-ornament" aria-hidden="true"></div>
+
+    <div class="curtain-content">
+      <!-- Monogram Seal -->
+      <div class="curtain-seal-wrap">
+        <svg class="curtain-seal-svg" viewBox="0 0 100 100">
+          <polygon points="50,2 62,26 88,14 76,40 100,50 76,60 88,86 62,74 50,98 38,74 12,86 24,60 0,50 24,40 12,14 38,26" 
+                   stroke="#D99684" stroke-width="1.2" fill="none" opacity="0.9"/>
+        </svg>
+        <div class="curtain-seal-inner">
+          <span>A&amp;A</span>
+        </div>
+      </div>
+
+      <div class="curtain-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        <span>Engagement Invitation</span>
+      </div>
+
+      <h1 class="curtain-title">Afnan <span class="ampersand">&amp;</span> Alfia</h1>
+      <p class="curtain-subline">In the name of Allah, The Most Gracious, The Most Merciful</p>
+
+      <div class="curtain-date-chip">
+        <span>2 October 2026 · Friday</span>
+      </div>
+
+      <button class="curtain-open-btn" id="openInvitationBtn">
+        <span>Open Invitation</span>
+        <svg viewBox="0 0 24 24">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN INVITATION: STRICT 11 ALTERNATING SLIDES (WHITE / RED)
+       ========================================================================== -->
+  <main class="app-container" id="mainInvitation">
+
+    <!-- SLIDE 1: WHITE — HERO SLIDE -->
+    <section id="hero" class="slide slide-white">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        <span>Engagement Celebration</span>
+      </div>
+
+      <div class="hero-names-wrap">
+        <span class="hero-name">Afnan</span>
+        <div class="hero-ampersand-box">
+          <div class="line"></div>
+          <span class="hero-ampersand">&amp;</span>
+          <div class="line"></div>
+        </div>
+        <span class="hero-name">Alfia</span>
+      </div>
+
+      <p class="hero-event-desc">The Blessed Beginning of Forever</p>
+
+      <div class="hero-date-banner">
+        <span class="date-text">2 October 2026</span>
+        <span class="date-dot"></span>
+        <span class="date-text">Friday</span>
+      </div>
+
+      <div class="hero-scroll-cue" id="scrollCue">
+        <span>Scroll to Explore</span>
+        <svg viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: ROSE RED — ISLAMIC BLESSINGS (NOTO KUFI ARABIC) -->
+    <section id="islamic" class="slide slide-red">
+      <span class="slide-eyebrow">Sacred Blessings</span>
+      <h2 class="slide-heading">In The Name of Allah</h2>
+
+      <div class="islamic-divider">
+        <div class="ornament-line"></div>
+        <svg class="ornament-center ornament-icon" viewBox="0 0 24 24">
+          <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"/>
+        </svg>
+        <div class="ornament-line"></div>
+      </div>
+
+      <div class="mihrab-arch">
+        <div class="arabic-bismillah">
+          بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+        </div>
+
+        <div class="arabic-dua-text">
+          بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+        </div>
+
+        <p class="dua-english">
+          "May Allah bless you and your Partner On This Adventure of Your Life Together"
+        </p>
+
+        <div class="couple-role-row">
+          <div class="couple-role-item">
+            <div class="name">Afnan</div>
+            <div class="role">The Groom</div>
+          </div>
+          <div class="couple-role-divider"></div>
+          <div class="couple-role-item">
+            <div class="name">Alfia</div>
+            <div class="role">The Bride</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: WHITE — DATE & AUSPICIOUS CALENDAR -->
+    <section id="date" class="slide slide-white">
+      <span class="slide-eyebrow">Mark The Date</span>
+      <h2 class="slide-heading">Save Our Date</h2>
+
+      <div class="islamic-divider">
+        <div class="ornament-line"></div>
+        <svg class="ornament-center ornament-icon" viewBox="0 0 24 24">
+          <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"/>
+        </svg>
+        <div class="ornament-line"></div>
+      </div>
+
+      <div class="date-display-box">
+        <span class="date-grand-day">02</span>
+        <span class="date-grand-month">October 2026</span>
+        <span class="date-grand-weekday">Friday · Auspicious Ceremony</span>
+      </div>
+
+      <!-- Live Countdown Grid -->
+      <div class="countdown-grid" id="countdownGrid">
+        <div class="countdown-cell">
+          <span class="number" id="cdDays">--</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="countdown-cell">
+          <span class="number" id="cdHours">--</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="countdown-cell">
+          <span class="number" id="cdMinutes">--</span>
+          <span class="label">Mins</span>
+        </div>
+        <div class="countdown-cell">
+          <span class="number" id="cdSeconds">--</span>
+          <span class="label">Secs</span>
+        </div>
+      </div>
+
+      <!-- Calendar Sheet Mockup -->
+      <div class="calendar-mockup">
+        <div class="cal-mockup-header">October 2026 · Jumada al-Awwal 1448 AH</div>
+        <div class="cal-days-grid">
+          <span class="cal-weekday-label">Su</span>
+          <span class="cal-weekday-label">Mo</span>
+          <span class="cal-weekday-label">Tu</span>
+          <span class="cal-weekday-label">We</span>
+          <span class="cal-weekday-label">Th</span>
+          <span class="cal-weekday-label">Fr</span>
+          <span class="cal-weekday-label">Sa</span>
+          <span></span><span></span><span></span><span></span>
+          <span class="cal-date-num">1</span>
+          <span class="cal-date-num event-highlight">2</span>
+          <span class="cal-date-num">3</span>
+          <span class="cal-date-num">4</span>
+          <span class="cal-date-num">5</span>
+          <span class="cal-date-num">6</span>
+          <span class="cal-date-num">7</span>
+          <span class="cal-date-num">8</span>
+          <span class="cal-date-num">9</span>
+          <span class="cal-date-num">10</span>
+        </div>
+      </div>
+
+      <button class="btn-add-cal" id="addToCalendarBtn">
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <span>Add To Calendar</span>
+      </button>
+    </section>
+
+    <!-- SLIDE 4: ROSE RED — TIME SECTION -->
+    <section id="time" class="slide slide-red">
+      <span class="slide-eyebrow">Auspicious Moment</span>
+      <h2 class="slide-heading">Ceremony Time</h2>
+
+      <div class="islamic-divider">
+        <div class="ornament-line"></div>
+        <svg class="ornament-center ornament-icon" viewBox="0 0 24 24">
+          <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"/>
+        </svg>
+        <div class="ornament-line"></div>
+      </div>
+
+      <div class="time-hero-box">
+        <div class="time-icon-circle">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+
+        <div class="time-main-val">12:09 PM</div>
+        <div class="time-badge-desc">Friday Afternoon · Barakah Hour</div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: WHITE — VENUE SECTION -->
+    <section id="venue" class="slide slide-white">
+      <span class="slide-eyebrow">Celebration Location</span>
+      <h2 class="slide-heading">The Venue</h2>
+
+      <div class="islamic-divider">
+        <div class="ornament-line"></div>
+        <svg class="ornament-center ornament-icon" viewBox="0 0 24 24">
+          <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"/>
+        </svg>
+        <div class="ornament-line"></div>
+      </div>
+
+      <div class="content-card venue-card">
+        <div class="venue-pin-wrap">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+
+        <h3 class="venue-name-bold">Bride Home Dar Al Naseer</h3>
+        <p class="venue-addr-str">
+          Adrees, Dharmik Nagar, Nanjangud
+        </p>
+
+        <div class="venue-btn-group">
+          <a href="https://maps.app.goo.gl/nBZe9C1TdcXSGYEVA?g_st=ac" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-get-directions">
+            <svg viewBox="0 0 24 24">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+            </svg>
+            <span>Get Directions</span>
+          </a>
+
+          <button class="btn-copy-address" id="copyAddressBtn">
+            <svg viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <span>Copy Full Address</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: ROSE RED — EVENT / TIMELINE SECTION -->
+    <section id="timeline" class="slide slide-red">
+      <span class="slide-eyebrow">Order Of Celebration</span>
+      <h2 class="slide-heading">Ceremony Timeline</h2>
+
+      <div class="islamic-divider">
+        <div class="ornament-line"></div>
+        <svg class="ornament-center ornament-icon" viewBox="0 0 24 24">
+          <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"/>
+        </svg>
+        <div class="ornament-line"></div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line-track"></div>
+
+        <div class="timeline-step">
+          <div class="timeline-node"></div>
+          <div class="timeline-time-badge">12:09 PM</div>
+          <div class="timeline-title">Engagement Ceremony</div>
+          <p class="timeline-desc">
+            Auspicious exchange of rings, family introductions, and solemn prayers for the couple.
+          </p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-node"></div>
+          <div class="timeline-time-badge">01:00 PM</div>
+          <div class="timeline-title">Festive Luncheon</div>
+          <p class="timeline-desc">
+            Enjoy a sumptuous traditional feast prepared with utmost love for our esteemed guests.
+          </p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-node"></div>
+          <div class="timeline-time-badge">02:30 PM</div>
+          <div class="timeline-title">Felicitations &amp; Duas</div>
+          <p class="timeline-desc">
+            Cherished photographs, congratulatory blessings, and warm parting gifts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: WHITE — RSVP SECTION (WHATSAPP INTEGRATION) -->
+    <section id="rsvp" class="slide slide-white">
+      <span class="slide-eyebrow">Confirm Presence</span>
+      <h2 class="slide-heading">Will You Join Us?</h2>
+      <p class="slide-subtitle">Please let us know so we can welcome you and your family with open hearts.</p>
+
+      <div class="content-card rsvp-form-container">
+        <form id="rsvpForm" onsubmit="return false;">
+          <div class="form-field-group">
+            <label class="form-field-label" for="rsvpName">Your Full Name</label>
+            <input type="text" id="rsvpName" class="form-input-ctrl" placeholder="e.g. Mohammed Farooq" required>
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-field-label" for="rsvpGuests">Number of Guests</label>
+            <select id="rsvpGuests" class="form-select-ctrl">
+              <option value="1">1 Person (Myself)</option>
+              <option value="2" selected>2 Persons</option>
+              <option value="3">3 Persons</option>
+              <option value="4">4 Persons</option>
+              <option value="5+">5+ Family Members</option>
+            </select>
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-field-label" for="rsvpAttendance">Attendance Status</label>
+            <select id="rsvpAttendance" class="form-select-ctrl">
+              <option value="Joyfully Attending">Joyfully Attending InshaAllah</option>
+              <option value="Sending Warm Duas">Regretfully Cannot Attend (Sending Duas)</option>
+            </select>
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-field-label" for="rsvpMessage">Personal Message (Optional)</label>
+            <textarea id="rsvpMessage" class="form-textarea-ctrl" rows="2" placeholder="Send a short prayer or warm message..."></textarea>
+          </div>
+
+          <button type="button" class="btn-submit-whatsapp" id="btnWhatsappRsvp">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 3.67C16.58 3.67 20.28 7.37 20.28 11.92C20.28 16.46 16.58 20.17 12.05 20.17C10.58 20.17 9.17 19.78 7.94 19.05L7.63 18.87L4.53 19.68L5.36 16.66L5.16 16.34C4.38 15.09 3.97 13.52 3.97 11.91C3.97 7.37 7.67 3.67 12.05 3.67M9.06 7.42C8.89 7.42 8.63 7.48 8.41 7.73C8.18 7.97 7.55 8.57 7.55 9.77C7.55 10.97 8.43 12.13 8.55 12.29C8.68 12.45 10.28 14.93 12.72 15.98C14.76 16.86 15.17 16.69 15.61 16.65C16.05 16.61 17.03 16.07 17.23 15.5C17.43 14.93 17.43 14.45 17.37 14.35C17.31 14.24 17.15 14.18 16.9 14.05C16.65 13.93 15.44 13.33 15.22 13.25C14.99 13.17 14.83 13.13 14.66 13.37C14.5 13.62 14.03 14.18 13.88 14.35C13.74 14.51 13.59 14.53 13.34 14.41C13.09 14.28 12.29 14.02 11.34 13.18C10.6 12.52 10.1 11.71 9.95 11.46C9.81 11.21 9.94 11.08 10.06 10.95C10.17 10.84 10.31 10.66 10.43 10.51C10.55 10.37 10.6 10.26 10.68 10.1C10.76 9.93 10.72 9.8 10.66 9.68C10.6 9.55 10.13 8.39 9.93 7.91C9.74 7.44 9.54 7.51 9.38 7.5C9.23 7.5 9.06 7.42 9.06 7.42Z"/>
+            </svg>
+            <span>RSVP ON WHATSAPP</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: ROSE RED — WEDDING WISHES -->
+    <section id="wishes" class="slide slide-red">
+      <span class="slide-eyebrow">Guestbook Of Duas</span>
+      <h2 class="slide-heading">Leave Your Wishes</h2>
+      <p class="slide-subtitle">Share your heartfelt prayers and congratulations for Afnan &amp; Alfia.</p>
+
+      <div class="content-card wishes-input-box">
+        <form id="wishesForm" onsubmit="return false;">
+          <div class="form-field-group">
+            <label class="form-field-label" for="wishAuthor">Your Name</label>
+            <input type="text" id="wishAuthor" class="form-input-ctrl" placeholder="e.g. Uncle Rashid & Family" required>
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-field-label" for="wishText">Your Heartfelt Blessings</label>
+            <textarea id="wishText" class="form-textarea-ctrl" rows="2" placeholder="May Allah bless this union with eternal love, happiness and barakah..." required></textarea>
+          </div>
+
+          <button type="button" class="btn-send-wishes" id="btnSendWish">
+            <span>Send Wishes</span>
+            <svg viewBox="0 0 24 24">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Live Stream Feed -->
+      <div class="wishes-live-stream" id="wishesFeed"></div>
+    </section>
+
+    <!-- SLIDE 9: WHITE — BEST WISHES SECTION 1 (MANGALYA FASHION JEWELS) -->
+    <section id="best-wishes-1" class="slide slide-white">
+      <span class="slide-eyebrow">Warmest Congratulations</span>
+      <h2 class="slide-heading">Best Wishes</h2>
+
+      <div class="islamic-divider">
+        <div class="ornament-line"></div>
+        <svg class="ornament-center ornament-icon" viewBox="0 0 24 24">
+          <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"/>
+        </svg>
+        <div class="ornament-line"></div>
+      </div>
+
+      <div class="compliments-card-white">
+        <h3 class="firm-name">Mangalya Fashion Jewels</h3>
+        <p class="firm-address">
+          K.R.C. Main Road<br>
+          Marigudi Street<br>
+          Gundalpet – 571111
+        </p>
+
+        <div class="firm-divider"></div>
+
+        <div class="personal-names">
+          <div>S. Babu</div>
+          <div>M. Nisha Rose</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10: ROSE RED — ADDITIONAL BEST WISHES 2 (GOLDEN MEAT STALL) -->
+    <section id="best-wishes-2" class="slide slide-red">
+      <span class="slide-eyebrow">With Heartfelt Prayers</span>
+      <h2 class="slide-heading">With Best Compliments</h2>
+
+      <div class="islamic-divider">
+        <div class="ornament-line"></div>
+        <svg class="ornament-center ornament-icon" viewBox="0 0 24 24">
+          <polygon points="12 2 15 9 22 12 15 15 12 22 9 15 2 12 9 9"/>
+        </svg>
+        <div class="ornament-line"></div>
+      </div>
+
+      <div class="compliments-card-red">
+        <h3 class="firm-name">Golden Meat Stall</h3>
+        <p class="firm-address">
+          Bathery Road, Gudalur
+        </p>
+
+        <div class="firm-divider"></div>
+
+        <div class="personal-names">
+          <div>Naseer Maideen</div>
+          <div>Darjad Begum</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11: WHITE — FINAL CLOSING -->
+    <section id="closing" class="slide slide-white">
+      <div class="hero-badge" style="margin-bottom: 12px;">
+        <svg viewBox="0 0 24 24">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+        <span>With Sacred Blessings</span>
+      </div>
+
+      <h2 class="closing-thank-you">Thank You</h2>
+      <p class="closing-quote">
+        "Your presence and prayers mean the world to us."
+      </p>
+
+      <div class="closing-couple">Afnan &amp; Alfia</div>
+      <div class="closing-date-tag">2 OCTOBER 2026</div>
+      <p class="closing-dua-sign">With Love &amp; Duas</p>
+
+      <button class="btn-return-top" id="backToTopBtn">
+        <svg viewBox="0 0 24 24">
+          <line x1="12" y1="19" x2="12" y2="5"/>
+          <polyline points="5 12 12 5 19 12"/>
+        </svg>
+        <span>Back To Top</span>
+      </button>
+
+      <!-- Creator Credits Footer Card (Sanu Frameart) -->
+      <footer class="creator-credits-card">
+        <span class="creator-eyebrow">Website Designed &amp; Crafted By</span>
+        <h3 class="creator-brand-name">Sanu Frameart</h3>
+
+        <div class="creator-contact-links">
+          <!-- Instagram Link -->
+          <a href="https://www.instagram.com/sanu_frameart/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="creator-link-pill ig-link" 
+             title="Follow on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <span>@sanu_frameart</span>
+          </a>
+
+          <!-- WhatsApp Link -->
+          <a href="https://wa.me/916235838332?text=Hello%20Sanu%20Frameart%2C%20I%20loved%20the%20engagement%20invitation%20website%21" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="creator-link-pill wa-link" 
+             title="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 3.67C16.58 3.67 20.28 7.37 20.28 11.92C20.28 16.46 16.58 20.17 12.05 20.17C10.58 20.17 9.17 19.78 7.94 19.05L7.63 18.87L4.53 19.68L5.36 16.66L5.16 16.34C4.38 15.09 3.97 13.52 3.97 11.91C3.97 7.37 7.67 3.67 12.05 3.67M9.06 7.42C8.89 7.42 8.63 7.48 8.41 7.73C8.18 7.97 7.55 8.57 7.55 9.77C7.55 10.97 8.43 12.13 8.55 12.29C8.68 12.45 10.28 14.93 12.72 15.98C14.76 16.86 15.17 16.69 15.61 16.65C16.05 16.61 17.03 16.07 17.23 15.5C17.43 14.93 17.43 14.45 17.37 14.35C17.31 14.24 17.15 14.18 16.9 14.05C16.65 13.93 15.44 13.33 15.22 13.25C14.99 13.17 14.83 13.13 14.66 13.37C14.5 13.62 14.03 14.18 13.88 14.35C13.74 14.51 13.59 14.53 13.34 14.41C13.09 14.28 12.29 14.02 11.34 13.18C10.6 12.52 10.1 11.71 9.95 11.46C9.81 11.21 9.94 11.08 10.06 10.95C10.17 10.84 10.31 10.66 10.43 10.51C10.55 10.37 10.6 10.26 10.68 10.1C10.76 9.93 10.72 9.8 10.66 9.68C10.6 9.55 10.13 8.39 9.93 7.91C9.74 7.44 9.54 7.51 9.38 7.5C9.23 7.5 9.06 7.42 9.06 7.42Z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <!-- Direct Call Link -->
+          <a href="tel:+916235838332" 
+             class="creator-link-pill call-link" 
+             title="Call Sanu Frameart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+91 62358 38332</span>
+          </a>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast-pill" id="toastPill">Address copied to clipboard!</div>
+
+  <!-- ==========================================================================
+       YOUTUBE IFRAME API & JAVASCRIPT ENGINE
+       ========================================================================== -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ==========================================================================
+         CANVAS ENGINE: MULTI-LAYER FLOATING ROSE PETALS (HIGH CONTRAST)
+         Visible over BOTH White and Red slides
+         ========================================================================== */
+      const canvas = document.getElementById('fx-canvas');
+      const ctx = canvas.getContext('2d');
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+
+      function resizeCanvas() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      // Collect positions of red slides to dynamically adapt petal contrast
+      const redSlides = document.querySelectorAll('.slide-red');
+      function isOverRedSlide(y) {
+        for (let i = 0; i < redSlides.length; i++) {
+          const rect = redSlides[i].getBoundingClientRect();
+          if (y >= rect.top && y <= rect.bottom) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      // Layered Rose Petal Class (Background, Midground, Foreground)
+      class RosePetal {
+        constructor(layer) {
+          this.layer = layer; // 'bg', 'mid', 'fg'
+          this.reset(true);
+        }
+
+        reset(initial = false) {
+          this.x = Math.random() * width;
+          this.y = initial ? Math.random() * height : -30;
+
+          if (this.layer === 'bg') {
+            this.size = Math.random() * 7 + 6;
+            this.speedY = Math.random() * 0.45 + 0.25;
+            this.swing = Math.random() * 1.2 + 0.8;
+            this.swingSpeed = Math.random() * 0.015 + 0.008;
+            this.opacity = Math.random() * 0.35 + 0.35;
+          } else if (this.layer === 'fg') {
+            this.size = Math.random() * 14 + 14;
+            this.speedY = Math.random() * 0.95 + 0.6;
+            this.swing = Math.random() * 2.5 + 1.5;
+            this.swingSpeed = Math.random() * 0.025 + 0.012;
+            this.opacity = Math.random() * 0.3 + 0.65;
+          } else { // 'mid'
+            this.size = Math.random() * 9 + 10;
+            this.speedY = Math.random() * 0.65 + 0.38;
+            this.swing = Math.random() * 1.8 + 1.2;
+            this.swingSpeed = Math.random() * 0.02 + 0.01;
+            this.opacity = Math.random() * 0.35 + 0.55;
+          }
+
+          this.speedX = Math.random() * 0.35 + 0.15;
+          this.angle = Math.random() * Math.PI * 2;
+          this.rotSpeed = (Math.random() - 0.5) * 0.022;
+          this.flip = Math.random() * Math.PI;
+          this.flipSpeed = Math.random() * 0.03 + 0.012;
+        }
+
+        update() {
+          this.angle += this.rotSpeed;
+          this.flip += this.flipSpeed;
+          this.y += this.speedY;
+          this.x += Math.sin(this.flip) * this.swing + this.speedX * 0.25;
+
+          if (this.y > height + 40 || this.x > width + 40 || this.x < -40) {
+            this.reset();
+          }
+        }
+
+        draw(ctx) {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate(this.angle);
+          ctx.scale(1, Math.cos(this.flip));
+          ctx.globalAlpha = this.opacity;
+
+          const onRed = isOverRedSlide(this.y);
+
+          // Draw organic curved petal geometry
+          ctx.beginPath();
+          ctx.moveTo(0, 0);
+          ctx.bezierCurveTo(-this.size * 0.8, -this.size * 0.45, -this.size * 0.9, this.size * 0.75, 0, this.size);
+          ctx.bezierCurveTo(this.size * 0.9, this.size * 0.75, this.size * 0.8, -this.size * 0.45, 0, 0);
+
+          const grad = ctx.createRadialGradient(0, this.size * 0.4, 1, 0, this.size * 0.4, this.size);
+
+          if (onRed) {
+            // Luminous Soft Cream / Light Blush Petals over Rose-Red Slides
+            grad.addColorStop(0, '#FFEBF2');
+            grad.addColorStop(1, '#F8ADC2');
+            ctx.fillStyle = grad;
+            ctx.shadowColor = 'rgba(255, 220, 230, 0.4)';
+            ctx.shadowBlur = 6;
+          } else {
+            // Vivid Wedding Rose-Red Petals over White Slides
+            grad.addColorStop(0, '#C0264D');
+            grad.addColorStop(1, '#8E1332');
+            ctx.fillStyle = grad;
+            ctx.shadowColor = 'rgba(168, 22, 56, 0.22)';
+            ctx.shadowBlur = 5;
+            ctx.shadowOffsetY = 2;
+          }
+          ctx.fill();
+
+          // Delicate Center Vein
+          ctx.strokeStyle = onRed ? 'rgba(255, 255, 255, 0.4)' : 'rgba(255, 215, 225, 0.35)';
+          ctx.lineWidth = 0.5;
+          ctx.beginPath();
+          ctx.moveTo(0, 1);
+          ctx.quadraticCurveTo(this.size * 0.08, this.size * 0.5, 0, this.size - 1.5);
+          ctx.stroke();
+
+          ctx.restore();
+        }
+      }
+
+      // Twinkling Starlight Particles
+      class Starlet {
+        constructor() {
+          this.reset(true);
+        }
+        reset(initial = false) {
+          this.x = Math.random() * width;
+          this.y = initial ? Math.random() * height : height + 10;
+          this.size = Math.random() * 1.8 + 0.6;
+          this.speedY = -(Math.random() * 0.4 + 0.1);
+          this.speedX = (Math.random() - 0.5) * 0.25;
+          this.alpha = 0;
+          this.maxAlpha = Math.random() * 0.65 + 0.25;
+          this.fadeSpeed = Math.random() * 0.01 + 0.004;
+          this.fadeIn = true;
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX;
+          if (this.fadeIn) {
+            this.alpha += this.fadeSpeed;
+            if (this.alpha >= this.maxAlpha) this.fadeIn = false;
+          } else {
+            this.alpha -= this.fadeSpeed * 0.8;
+            if (this.alpha <= 0) this.reset();
+          }
+          if (this.y < -10 || this.x < -10 || this.x > width + 10) {
+            this.reset();
+          }
+        }
+        draw(ctx) {
+          if (this.alpha <= 0) return;
+          ctx.save();
+          ctx.globalAlpha = this.alpha;
+          const onRed = isOverRedSlide(this.y);
+          ctx.fillStyle = onRed ? '#FFFFFF' : '#D99684';
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      // Instantiate multi-layer petals: 10 background, 14 midground, 6 foreground
+      const petals = [
+        ...Array.from({ length: 10 }, () => new RosePetal('bg')),
+        ...Array.from({ length: 14 }, () => new RosePetal('mid')),
+        ...Array.from({ length: 6 }, () => new RosePetal('fg'))
+      ];
+      const starlets = Array.from({ length: 28 }, () => new Starlet());
+
+      function renderCanvasFrame() {
+        ctx.clearRect(0, 0, width, height);
+
+        starlets.forEach(s => {
+          s.update();
+          s.draw(ctx);
+        });
+
+        petals.forEach(p => {
+          p.update();
+          p.draw(ctx);
+        });
+
+        requestAnimationFrame(renderCanvasFrame);
+      }
+      renderCanvasFrame();
+
+
+      /* ==========================================================================
+         AUDIO SYSTEM: YOUTUBE WEDDING NASHEED + WEB AUDIO SYNTHESIS FALLBACK
+         Track: Wedding Nasheed - Muhammad Al Muqit | Slowed + Reverb (ZW_MVzmsnWI)
+         Adheres strictly to browser autoplay policies: starts only upon interaction.
+         ========================================================================== */
+      let ytPlayer = null;
+      let isPlaying = false;
+      let webAudioCtx = null;
+      let synthInterval = null;
+
+      // Fallback Web Audio Synthesizer (Dreamy romantic harp arpeggios)
+      const chordFreaks = [
+        [174.61, 220.00, 261.63, 329.63, 392.00], // Fmaj9
+        [146.83, 220.00, 261.63, 349.23, 440.00], // Dm9
+        [196.00, 246.94, 293.66, 349.23, 440.00], // G7sus
+        [130.81, 196.00, 261.63, 329.63, 392.00]  // Cadd9
+      ];
+      let chordIndex = 0;
+
+      function playHarpPluck(freq, delay = 0) {
+        if (!webAudioCtx) return;
+        const now = webAudioCtx.currentTime + delay;
+        const osc = webAudioCtx.createOscillator();
+        const gain = webAudioCtx.createGain();
+        const filter = webAudioCtx.createBiquadFilter();
+
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, now);
+
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(1200, now);
+        filter.frequency.exponentialRampToValueAtTime(300, now + 3.2);
+
+        gain.gain.setValueAtTime(0.001, now);
+        gain.gain.linearRampToValueAtTime(0.045, now + 0.04);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 3.2);
+
+        osc.connect(filter);
+        filter.connect(gain);
+        gain.connect(webAudioCtx.destination);
+
+        osc.start(now);
+        osc.stop(now + 3.3);
+      }
+
+      function startWebAudioFallback() {
+        if (!webAudioCtx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          webAudioCtx = new AudioContext();
+        }
+        if (webAudioCtx.state === 'suspended') {
+          webAudioCtx.resume();
+        }
+        if (synthInterval) clearInterval(synthInterval);
+
+        function cycleChords() {
+          const chord = chordFreaks[chordIndex];
+          chord.forEach((freq, idx) => playHarpPluck(freq, idx * 0.35));
+          chordIndex = (chordIndex + 1) % chordFreaks.length;
+        }
+        cycleChords();
+        synthInterval = setInterval(cycleChords, 3200);
+      }
+
+      function stopWebAudioFallback() {
+        if (synthInterval) {
+          clearInterval(synthInterval);
+          synthInterval = null;
+        }
+      }
+
+      // Global YouTube API Ready Callback
+      window.onYouTubeIframeAPIReady = function () {
+        ytPlayer = new YT.Player('ytAudioPlayer', {
+          height: '1',
+          width: '1',
+          videoId: 'ZW_MVzmsnWI',
+          playerVars: {
+            autoplay: 0,
+            controls: 0,
+            loop: 1,
+            playlist: 'ZW_MVzmsnWI',
+            playsinline: 1,
+            origin: window.location.origin
+          },
+          events: {
+            onReady: function () {
+              console.log('YouTube Nasheed Player Ready');
+            },
+            onStateChange: function (event) {
+              if (event.data === YT.PlayerState.PLAYING) {
+                updateAudioUI(true);
+              } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+                updateAudioUI(false);
+              }
+            }
+          }
+        });
+      };
+
+      function updateAudioUI(playing) {
+        isPlaying = playing;
+        const btn = document.getElementById('audioToggleBtn');
+        const text = document.getElementById('audioStatusText');
+        if (playing) {
+          btn.classList.add('playing');
+          text.textContent = 'Playing';
+        } else {
+          btn.classList.remove('playing');
+          text.textContent = 'Muted';
+        }
+      }
+
+      function toggleAudio(forcePlay) {
+        const nextState = forcePlay !== undefined ? forcePlay : !isPlaying;
+
+        if (nextState) {
+          // Attempt to play YouTube Nasheed
+          let ytStarted = false;
+          if (ytPlayer && typeof ytPlayer.playVideo === 'function') {
+            try {
+              ytPlayer.playVideo();
+              ytStarted = true;
+            } catch (e) {
+              console.warn('YouTube playback error, starting synthesizer fallback', e);
+            }
+          }
+          if (!ytStarted) {
+            startWebAudioFallback();
+          }
+          updateAudioUI(true);
+          showToast('Wedding Nasheed Playing');
+        } else {
+          if (ytPlayer && typeof ytPlayer.pauseVideo === 'function') {
+            try { ytPlayer.pauseVideo(); } catch (e) {}
+          }
+          stopWebAudioFallback();
+          updateAudioUI(false);
+          showToast('Nasheed Muted');
+        }
+      }
+
+      document.getElementById('audioToggleBtn').addEventListener('click', () => {
+        toggleAudio();
+      });
+
+
+      /* ==========================================================================
+         CINEMATIC OPENING SCREEN
+         ========================================================================== */
+      const curtainModal = document.getElementById('curtainModal');
+      const openInvitationBtn = document.getElementById('openInvitationBtn');
+      const navDots = document.getElementById('navDots');
+
+      openInvitationBtn.addEventListener('click', () => {
+        curtainModal.classList.add('unveiled');
+        navDots.classList.add('visible');
+
+        // Start Wedding Nasheed upon user interaction
+        setTimeout(() => {
+          toggleAudio(true);
+        }, 500);
+
+        // Scroll to hero
+        setTimeout(() => {
+          document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+      });
+
+      // Scroll Cue in Hero
+      document.getElementById('scrollCue').addEventListener('click', () => {
+        document.getElementById('islamic').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      // Back to Top Button
+      document.getElementById('backToTopBtn').addEventListener('click', () => {
+        document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+      });
+
+
+      /* ==========================================================================
+         LIVE COUNTDOWN TO 2 OCTOBER 2026, 12:09 PM (IST +05:30)
+         ========================================================================== */
+      const targetDate = new Date('2026-10-02T12:09:00+05:30').getTime();
+      const cdDays = document.getElementById('cdDays');
+      const cdHours = document.getElementById('cdHours');
+      const cdMinutes = document.getElementById('cdMinutes');
+      const cdSeconds = document.getElementById('cdSeconds');
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff <= 0) {
+          cdDays.textContent = '00';
+          cdHours.textContent = '00';
+          cdMinutes.textContent = '00';
+          cdSeconds.textContent = '00';
+          return;
+        }
+
+        const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+        cdDays.textContent = String(d).padStart(2, '0');
+        cdHours.textContent = String(h).padStart(2, '0');
+        cdMinutes.textContent = String(m).padStart(2, '0');
+        cdSeconds.textContent = String(s).padStart(2, '0');
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+
+      /* ==========================================================================
+         ADD TO CALENDAR (.ICS FILE EXPORT)
+         ========================================================================== */
+      document.getElementById('addToCalendarBtn').addEventListener('click', () => {
+        const icsContent = [
+          'BEGIN:VCALENDAR',
+          'VERSION:2.0',
+          'PRODID:-//Afnan & Alfia Engagement//EN',
+          'CALSCALE:GREGORIAN',
+          'METHOD:PUBLISH',
+          'BEGIN:VEVENT',
+          'UID:engagement-afnan-alfia-20261002@afnanalfia.wedding',
+          'DTSTAMP:20261002T063900Z',
+          'DTSTART:20261002T063900Z',
+          'DTEND:20261002T093900Z',
+          'SUMMARY:The Engagement of Afnan & Alfia',
+          'DESCRIPTION:The blessed Engagement ceremony of Afnan & Alfia at Bride Home Dar Al Naseer\\, Adrees\\, Dharmik Nagar\\, Nanjangud. Maps: https://maps.app.goo.gl/nBZe9C1TdcXSGYEVA?g_st=ac',
+          'LOCATION:Bride Home Dar Al Naseer\\, Adrees\\, Dharmik Nagar\\, Nanjangud',
+          'STATUS:CONFIRMED',
+          'END:VEVENT',
+          'END:VCALENDAR'
+        ].join('\r\n');
+
+        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.setAttribute('download', 'Engagement_Afnan_and_Alfia.ics');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        showToast('Event saved to calendar download!');
+      });
+
+
+      /* ==========================================================================
+         COPY ADDRESS ACTION
+         ========================================================================== */
+      document.getElementById('copyAddressBtn').addEventListener('click', () => {
+        const fullAddr = 'Bride Home Dar Al Naseer, Adrees, Dharmik Nagar, Nanjangud';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(fullAddr).then(() => {
+            showToast('Venue address copied to clipboard!');
+          });
+        } else {
+          showToast(fullAddr);
+        }
+      });
+
+
+      /* ==========================================================================
+         WHATSAPP RSVP INTEGRATION
+         Target Phone: +91 9019888387
+         ========================================================================== */
+      document.getElementById('btnWhatsappRsvp').addEventListener('click', () => {
+        const nameVal = document.getElementById('rsvpName').value.trim();
+        const guestsVal = document.getElementById('rsvpGuests').value;
+        const attendVal = document.getElementById('rsvpAttendance').value;
+        const msgVal = document.getElementById('rsvpMessage').value.trim();
+
+        if (!nameVal) {
+          alert('Please enter your full name before confirming RSVP.');
+          document.getElementById('rsvpName').focus();
+          return;
+        }
+
+        let text = `*ENGAGEMENT RSVP - AFNAN & ALFIA*\n\n`;
+        text += `Assalamu Alaikum,\n`;
+        text += `*Name:* ${nameVal}\n`;
+        text += `*Attendance:* ${attendVal}\n`;
+        text += `*Number of Guests:* ${guestsVal}\n`;
+        if (msgVal) {
+          text += `*Personal Note / Duas:* ${msgVal}\n`;
+        }
+        text += `\n_Sent via Afnan & Alfia Engagement Invitation_`;
+
+        const waLink = `https://wa.me/919019888387?text=${encodeURIComponent(text)}`;
+        window.open(waLink, '_blank');
+      });
+
+
+      /* ==========================================================================
+         WEDDING WISHES (CLIENT-SIDE GUESTBOOK READY FOR FUTURE BACKEND)
+         ========================================================================== */
+      const sampleWishes = [
+        {
+          author: 'Uncle Rashid & Family',
+          time: 'Just now',
+          text: 'Barakallahu lakuma wa baraka alaikuma! May Allah shower your journey with immense peace, barakah and cherished happiness.'
+        },
+        {
+          author: 'Fatima & Zubair',
+          time: '2 hours ago',
+          text: 'Heartiest congratulations dearest Afnan & Alfia! So thrilled for you both on this beautiful sacred milestone.'
+        }
+      ];
+
+      const wishesFeed = document.getElementById('wishesFeed');
+
+      function getWishes() {
+        try {
+          const stored = localStorage.getItem('afnan_alfia_wedding_wishes');
+          if (stored) return JSON.parse(stored);
+        } catch (e) {}
+        return sampleWishes;
+      }
+
+      function saveWishes(list) {
+        try {
+          localStorage.setItem('afnan_alfia_wedding_wishes', JSON.stringify(list));
+        } catch (e) {}
+      }
+
+      function renderWishesFeed() {
+        const list = getWishes();
+        wishesFeed.innerHTML = '';
+        list.forEach(item => {
+          const bubble = document.createElement('div');
+          bubble.className = 'wish-bubble';
+          bubble.innerHTML = `
+            <div class="wish-author-line">
+              <span class="wish-author-name">${escapeText(item.author)}</span>
+              <span class="wish-timestamp">${escapeText(item.time)}</span>
+            </div>
+            <p class="wish-text-content">“${escapeText(item.text)}”</p>
+          `;
+          wishesFeed.appendChild(bubble);
+        });
+      }
+
+      function escapeText(str) {
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      document.getElementById('btnSendWish').addEventListener('click', () => {
+        const authorInput = document.getElementById('wishAuthor');
+        const textInput = document.getElementById('wishText');
+
+        const author = authorInput.value.trim();
+        const text = textInput.value.trim();
+
+        if (!author || !text) {
+          alert('Please enter your name and a heartfelt blessing before sending.');
+          return;
+        }
+
+        const currentList = getWishes();
+        currentList.unshift({
+          author: author,
+          time: 'Just now',
+          text: text
+        });
+
+        saveWishes(currentList);
+        renderWishesFeed();
+
+        authorInput.value = '';
+        textInput.value = '';
+        showToast('Thank you for your beautiful prayers & wishes!');
+      });
+
+      renderWishesFeed();
+
+
+      /* ==========================================================================
+         INTERSECTION OBSERVER FOR ACTIVE NAVIGATION DOTS
+         ========================================================================== */
+      const slides = document.querySelectorAll('.slide');
+      const dots = document.querySelectorAll('.nav-dot');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            dots.forEach(dot => {
+              if (dot.getAttribute('data-target') === id) {
+                dot.classList.add('active');
+              } else {
+                dot.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, { threshold: 0.3 });
+
+      slides.forEach(s => observer.observe(s));
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          const targetId = dot.getAttribute('data-target');
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+
+      /* ==========================================================================
+         TOAST HELPER
+         ========================================================================== */
+      const toast = document.getElementById('toastPill');
+      let toastTimer = null;
+      function showToast(msg) {
+        toast.textContent = msg;
+        toast.classList.add('show');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.remove('show');
+        }, 3200);
+      }
+
+    })();
+  </script>
+</body>
+</html>
