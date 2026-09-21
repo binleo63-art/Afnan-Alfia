@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <title>Engagement Invitation | Afnan &amp; Alfia</title>
-  <meta name="description" content="You are cordially invited to celebrate the blessed Engagement of Afnan & Alfia on Friday, 2 October 2026 at Bride Home Dar Al Naseer, Nanjangud.">
+  <title>Engagement Invitation | Afnan &amp; Alfiya</title>
+  <meta name="description" content="You are cordially invited to celebrate the blessed Engagement of Afnan & Alfiya on Friday, 2 October 2026 at Bride Home Dar Al Naseer, Nanjangud.">
   <meta name="theme-color" content="#FFFFFF">
 
   <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="The Engagement of Afnan &amp; Alfia">
+  <meta property="og:title" content="The Engagement of Afnan &amp; Alfiya">
   <meta property="og:description" content="Friday, 2 October 2026 · 12:09 PM · Bride Home Dar Al Naseer, Nanjangud">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts: Bodoni Moda, Cormorant Garamond, Playfair Display, Manrope, and strictly Noto Kufi Arabic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     /* ==========================================================================
@@ -48,9 +48,9 @@
       --rosegold-text-gradient: linear-gradient(135deg, #9E1638 0%, #C0264D 50%, #D99684 100%);
 
       /* Typography Tokens */
-      --font-display: 'Bodoni Moda', 'Playfair Display', Georgia, serif;
-      --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-      --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+      --font-heading: 'Lora', 'Libre Baskerville', Georgia, serif;
+      --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       --font-arabic: 'Noto Kufi Arabic', sans-serif;
 
       /* Elevation & Shadows */
@@ -283,7 +283,7 @@
       font-family: var(--font-heading);
       font-style: italic;
       color: var(--rose-vibrant);
-      font-weight: 300;
+      font-weight: 400;
       margin: 0 4px;
     }
 
@@ -679,7 +679,7 @@
       font-style: italic;
       font-size: 2.2rem;
       color: var(--rose-primary);
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1;
     }
 
@@ -1220,14 +1220,8 @@
     }
 
     /* ==========================================================================
-       SLIDE 7: RSVP SECTION (WHITE)
+       FORM FIELD SHARED STYLES
        ========================================================================== */
-    .rsvp-form-container {
-      width: 100%;
-      max-width: 420px;
-      text-align: left;
-    }
-
     .form-field-group {
       margin-bottom: 16px;
     }
@@ -1258,40 +1252,6 @@
     .form-input-ctrl:focus, .form-select-ctrl:focus, .form-textarea-ctrl:focus {
       border-color: var(--rose-primary);
       box-shadow: 0 0 10px rgba(192, 38, 77, 0.2);
-    }
-
-    .btn-submit-whatsapp {
-      background: #25D366;
-      color: #FFFFFF;
-      font-family: var(--font-body);
-      font-size: 0.84rem;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      font-weight: 700;
-      border: none;
-      border-radius: var(--radius-pill);
-      padding: 16px 28px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
-      transition: all 0.3s ease;
-      margin-top: 10px;
-    }
-
-    .btn-submit-whatsapp:hover {
-      background: #20BA59;
-      transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
-    }
-
-    .btn-submit-whatsapp svg {
-      width: 18px;
-      height: 18px;
-      fill: currentColor;
     }
 
     /* ==========================================================================
@@ -1680,7 +1640,6 @@
       .mihrab-arch, 
       .timeline-container, 
       .venue-card, 
-      .rsvp-form-container, 
       .wishes-input-box, 
       .wishes-live-stream, 
       .creator-credits-card {
@@ -1720,7 +1679,6 @@
       .mihrab-arch, 
       .timeline-container, 
       .venue-card, 
-      .rsvp-form-container, 
       .wishes-input-box, 
       .wishes-live-stream, 
       .creator-credits-card {
@@ -1819,8 +1777,10 @@
   <!-- Background Animated Petal & Sparkle Canvas -->
   <canvas id="fx-canvas"></canvas>
 
-  <!-- YouTube Audio Player Element (Offscreen) -->
-  <div id="ytAudioPlayer"></div>
+  <!-- Background Audio Player Element -->
+  <audio id="bgAudio" loop preload="auto">
+    <source src="wedding_music.mp4" type="audio/mp4">
+  </audio>
 
   <!-- Floating Audio Control (Zero Emoji, Clean Line SVG) -->
   <button class="floating-audio-ctrl" id="audioToggleBtn" title="Toggle Wedding Nasheed" aria-label="Toggle Wedding Nasheed">
@@ -1844,7 +1804,6 @@
     <div class="nav-dot" data-target="time" title="Time"></div>
     <div class="nav-dot" data-target="venue" title="Venue"></div>
     <div class="nav-dot" data-target="timeline" title="Timeline"></div>
-    <div class="nav-dot" data-target="rsvp" title="RSVP"></div>
     <div class="nav-dot" data-target="wishes" title="Wishes"></div>
     <div class="nav-dot" data-target="best-wishes-1" title="Best Wishes"></div>
     <div class="nav-dot" data-target="best-wishes-2" title="Compliments"></div>
@@ -1876,7 +1835,7 @@
         <span>Engagement Invitation</span>
       </div>
 
-      <h1 class="curtain-title">Afnan <span class="ampersand">&amp;</span> Alfia</h1>
+      <h1 class="curtain-title">Afnan <span class="ampersand">&amp;</span> Alfiya</h1>
       <p class="curtain-subline">In the name of Allah, The Most Gracious, The Most Merciful</p>
 
       <div class="curtain-date-chip">
@@ -1914,7 +1873,7 @@
           <span class="hero-ampersand">&amp;</span>
           <div class="line"></div>
         </div>
-        <span class="hero-name">Alfia</span>
+        <span class="hero-name">Alfiya</span>
       </div>
 
       <p class="hero-event-desc">The Blessed Beginning of Forever</p>
@@ -1966,7 +1925,7 @@
           </div>
           <div class="couple-role-divider"></div>
           <div class="couple-role-item">
-            <div class="name">Alfia</div>
+            <div class="name">Alfiya</div>
             <div class="role">The Bride</div>
           </div>
         </div>
@@ -2097,7 +2056,7 @@
 
         <h3 class="venue-name-bold">Bride Home Dar Al Naseer</h3>
         <p class="venue-addr-str">
-          Adrees, Dharmik Nagar, Nanjangud
+          Adrees, Dharmika Nagara, Nanjangud
         </p>
 
         <div class="venue-btn-group">
@@ -2167,58 +2126,11 @@
       </div>
     </section>
 
-    <!-- SLIDE 7: WHITE — RSVP SECTION (WHATSAPP INTEGRATION) -->
-    <section id="rsvp" class="slide slide-white">
-      <span class="slide-eyebrow">Confirm Presence</span>
-      <h2 class="slide-heading">Will You Join Us?</h2>
-      <p class="slide-subtitle">Please let us know so we can welcome you and your family with open hearts.</p>
-
-      <div class="content-card rsvp-form-container">
-        <form id="rsvpForm" onsubmit="return false;">
-          <div class="form-field-group">
-            <label class="form-field-label" for="rsvpName">Your Full Name</label>
-            <input type="text" id="rsvpName" class="form-input-ctrl" placeholder="e.g. Mohammed Farooq" required>
-          </div>
-
-          <div class="form-field-group">
-            <label class="form-field-label" for="rsvpGuests">Number of Guests</label>
-            <select id="rsvpGuests" class="form-select-ctrl">
-              <option value="1">1 Person (Myself)</option>
-              <option value="2" selected>2 Persons</option>
-              <option value="3">3 Persons</option>
-              <option value="4">4 Persons</option>
-              <option value="5+">5+ Family Members</option>
-            </select>
-          </div>
-
-          <div class="form-field-group">
-            <label class="form-field-label" for="rsvpAttendance">Attendance Status</label>
-            <select id="rsvpAttendance" class="form-select-ctrl">
-              <option value="Joyfully Attending">Joyfully Attending InshaAllah</option>
-              <option value="Sending Warm Duas">Regretfully Cannot Attend (Sending Duas)</option>
-            </select>
-          </div>
-
-          <div class="form-field-group">
-            <label class="form-field-label" for="rsvpMessage">Personal Message (Optional)</label>
-            <textarea id="rsvpMessage" class="form-textarea-ctrl" rows="2" placeholder="Send a short prayer or warm message..."></textarea>
-          </div>
-
-          <button type="button" class="btn-submit-whatsapp" id="btnWhatsappRsvp">
-            <svg viewBox="0 0 24 24">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 3.67C16.58 3.67 20.28 7.37 20.28 11.92C20.28 16.46 16.58 20.17 12.05 20.17C10.58 20.17 9.17 19.78 7.94 19.05L7.63 18.87L4.53 19.68L5.36 16.66L5.16 16.34C4.38 15.09 3.97 13.52 3.97 11.91C3.97 7.37 7.67 3.67 12.05 3.67M9.06 7.42C8.89 7.42 8.63 7.48 8.41 7.73C8.18 7.97 7.55 8.57 7.55 9.77C7.55 10.97 8.43 12.13 8.55 12.29C8.68 12.45 10.28 14.93 12.72 15.98C14.76 16.86 15.17 16.69 15.61 16.65C16.05 16.61 17.03 16.07 17.23 15.5C17.43 14.93 17.43 14.45 17.37 14.35C17.31 14.24 17.15 14.18 16.9 14.05C16.65 13.93 15.44 13.33 15.22 13.25C14.99 13.17 14.83 13.13 14.66 13.37C14.5 13.62 14.03 14.18 13.88 14.35C13.74 14.51 13.59 14.53 13.34 14.41C13.09 14.28 12.29 14.02 11.34 13.18C10.6 12.52 10.1 11.71 9.95 11.46C9.81 11.21 9.94 11.08 10.06 10.95C10.17 10.84 10.31 10.66 10.43 10.51C10.55 10.37 10.6 10.26 10.68 10.1C10.76 9.93 10.72 9.8 10.66 9.68C10.6 9.55 10.13 8.39 9.93 7.91C9.74 7.44 9.54 7.51 9.38 7.5C9.23 7.5 9.06 7.42 9.06 7.42Z"/>
-            </svg>
-            <span>RSVP ON WHATSAPP</span>
-          </button>
-        </form>
-      </div>
-    </section>
-
     <!-- SLIDE 8: ROSE RED — WEDDING WISHES -->
     <section id="wishes" class="slide slide-red">
       <span class="slide-eyebrow">Guestbook Of Duas</span>
       <h2 class="slide-heading">Leave Your Wishes</h2>
-      <p class="slide-subtitle">Share your heartfelt prayers and congratulations for Afnan &amp; Alfia.</p>
+      <p class="slide-subtitle">Share your heartfelt prayers and congratulations for Afnan &amp; Alfiya.</p>
 
       <div class="content-card wishes-input-box">
         <form id="wishesForm" onsubmit="return false;">
@@ -2299,7 +2211,7 @@
 
         <div class="personal-names">
           <div>Naseer Maideen</div>
-          <div>Darjad Begum</div>
+          <div>Darjath Begum</div>
         </div>
       </div>
     </section>
@@ -2318,7 +2230,7 @@
         "Your presence and prayers mean the world to us."
       </p>
 
-      <div class="closing-couple">Afnan &amp; Alfia</div>
+      <div class="closing-couple">Afnan &amp; Alfiya</div>
       <div class="closing-date-tag">2 OCTOBER 2026</div>
       <p class="closing-dua-sign">With Love &amp; Duas</p>
 
@@ -2383,7 +2295,6 @@
   <!-- ==========================================================================
        YOUTUBE IFRAME API & JAVASCRIPT ENGINE
        ========================================================================== -->
-  <script src="https://www.youtube.com/iframe_api"></script>
 
   <script>
     (function () {
@@ -2585,11 +2496,10 @@
 
 
       /* ==========================================================================
-         AUDIO SYSTEM: YOUTUBE WEDDING NASHEED + WEB AUDIO SYNTHESIS FALLBACK
-         Track: Wedding Nasheed - Muhammad Al Muqit | Slowed + Reverb (ZW_MVzmsnWI)
-         Adheres strictly to browser autoplay policies: starts only upon interaction.
+         AUDIO SYSTEM: REFERENCE BGM (VAARANAM AAYIRAM - NENJUKKUL PEIDHIDUM)
+         Native HTML5 audio with smooth autoplay upon interaction & Web Audio fallback
          ========================================================================== */
-      let ytPlayer = null;
+      const bgAudio = document.getElementById('bgAudio');
       let isPlaying = false;
       let webAudioCtx = null;
       let synthInterval = null;
@@ -2655,35 +2565,6 @@
         }
       }
 
-      // Global YouTube API Ready Callback
-      window.onYouTubeIframeAPIReady = function () {
-        ytPlayer = new YT.Player('ytAudioPlayer', {
-          height: '1',
-          width: '1',
-          videoId: 'ZW_MVzmsnWI',
-          playerVars: {
-            autoplay: 0,
-            controls: 0,
-            loop: 1,
-            playlist: 'ZW_MVzmsnWI',
-            playsinline: 1,
-            origin: window.location.origin
-          },
-          events: {
-            onReady: function () {
-              console.log('YouTube Nasheed Player Ready');
-            },
-            onStateChange: function (event) {
-              if (event.data === YT.PlayerState.PLAYING) {
-                updateAudioUI(true);
-              } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
-                updateAudioUI(false);
-              }
-            }
-          }
-        });
-      };
-
       function updateAudioUI(playing) {
         isPlaying = playing;
         const btn = document.getElementById('audioToggleBtn');
@@ -2701,29 +2582,41 @@
         const nextState = forcePlay !== undefined ? forcePlay : !isPlaying;
 
         if (nextState) {
-          // Attempt to play YouTube Nasheed
-          let ytStarted = false;
-          if (ytPlayer && typeof ytPlayer.playVideo === 'function') {
-            try {
-              ytPlayer.playVideo();
-              ytStarted = true;
-            } catch (e) {
-              console.warn('YouTube playback error, starting synthesizer fallback', e);
+          if (bgAudio) {
+            const p = bgAudio.play();
+            if (p !== undefined) {
+              p.then(() => {
+                stopWebAudioFallback();
+                updateAudioUI(true);
+                showToast('Wedding Music Playing');
+              }).catch(err => {
+                console.warn('Audio autoplay restricted or failed, starting synthesizer fallback', err);
+                startWebAudioFallback();
+                updateAudioUI(true);
+                showToast('Wedding Music Playing');
+              });
+            } else {
+              updateAudioUI(true);
+              showToast('Wedding Music Playing');
             }
-          }
-          if (!ytStarted) {
+          } else {
             startWebAudioFallback();
+            updateAudioUI(true);
+            showToast('Wedding Music Playing');
           }
-          updateAudioUI(true);
-          showToast('Wedding Nasheed Playing');
         } else {
-          if (ytPlayer && typeof ytPlayer.pauseVideo === 'function') {
-            try { ytPlayer.pauseVideo(); } catch (e) {}
+          if (bgAudio) {
+            bgAudio.pause();
           }
           stopWebAudioFallback();
           updateAudioUI(false);
-          showToast('Nasheed Muted');
+          showToast('Music Muted');
         }
+      }
+
+      if (bgAudio) {
+        bgAudio.addEventListener('play', () => updateAudioUI(true));
+        bgAudio.addEventListener('pause', () => updateAudioUI(false));
       }
 
       document.getElementById('audioToggleBtn').addEventListener('click', () => {
@@ -2806,17 +2699,17 @@
         const icsContent = [
           'BEGIN:VCALENDAR',
           'VERSION:2.0',
-          'PRODID:-//Afnan & Alfia Engagement//EN',
+          'PRODID:-//Afnan & Alfiya Engagement//EN',
           'CALSCALE:GREGORIAN',
           'METHOD:PUBLISH',
           'BEGIN:VEVENT',
-          'UID:engagement-afnan-alfia-20261002@afnanalfia.wedding',
+          'UID:engagement-afnan-alfiya-20261002@afnanalfiya.wedding',
           'DTSTAMP:20261002T063900Z',
           'DTSTART:20261002T063900Z',
           'DTEND:20261002T093900Z',
-          'SUMMARY:The Engagement of Afnan & Alfia',
-          'DESCRIPTION:The blessed Engagement ceremony of Afnan & Alfia at Bride Home Dar Al Naseer\\, Adrees\\, Dharmik Nagar\\, Nanjangud. Maps: https://maps.app.goo.gl/nBZe9C1TdcXSGYEVA?g_st=ac',
-          'LOCATION:Bride Home Dar Al Naseer\\, Adrees\\, Dharmik Nagar\\, Nanjangud',
+          'SUMMARY:The Engagement of Afnan & Alfiya',
+          'DESCRIPTION:The blessed Engagement ceremony of Afnan & Alfiya at Bride Home Dar Al Naseer\\, Adrees\\, Dharmika Nagara\\, Nanjangud. Maps: https://maps.app.goo.gl/nBZe9C1TdcXSGYEVA?g_st=ac',
+          'LOCATION:Bride Home Dar Al Naseer\\, Adrees\\, Dharmika Nagara\\, Nanjangud',
           'STATUS:CONFIRMED',
           'END:VEVENT',
           'END:VCALENDAR'
@@ -2825,7 +2718,7 @@
         const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
         const link = document.createElement('a');
         link.href = window.URL.createObjectURL(blob);
-        link.setAttribute('download', 'Engagement_Afnan_and_Alfia.ics');
+        link.setAttribute('download', 'Engagement_Afnan_and_Alfiya.ics');
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -2837,7 +2730,7 @@
          COPY ADDRESS ACTION
          ========================================================================== */
       document.getElementById('copyAddressBtn').addEventListener('click', () => {
-        const fullAddr = 'Bride Home Dar Al Naseer, Adrees, Dharmik Nagar, Nanjangud';
+        const fullAddr = 'Bride Home Dar Al Naseer, Adrees, Dharmika Nagara, Nanjangud';
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(fullAddr).then(() => {
             showToast('Venue address copied to clipboard!');
@@ -2848,35 +2741,7 @@
       });
 
 
-      /* ==========================================================================
-         WHATSAPP RSVP INTEGRATION
-         Target Phone: +91 9019888387
-         ========================================================================== */
-      document.getElementById('btnWhatsappRsvp').addEventListener('click', () => {
-        const nameVal = document.getElementById('rsvpName').value.trim();
-        const guestsVal = document.getElementById('rsvpGuests').value;
-        const attendVal = document.getElementById('rsvpAttendance').value;
-        const msgVal = document.getElementById('rsvpMessage').value.trim();
-
-        if (!nameVal) {
-          alert('Please enter your full name before confirming RSVP.');
-          document.getElementById('rsvpName').focus();
-          return;
-        }
-
-        let text = `*ENGAGEMENT RSVP - AFNAN & ALFIA*\n\n`;
-        text += `Assalamu Alaikum,\n`;
-        text += `*Name:* ${nameVal}\n`;
-        text += `*Attendance:* ${attendVal}\n`;
-        text += `*Number of Guests:* ${guestsVal}\n`;
-        if (msgVal) {
-          text += `*Personal Note / Duas:* ${msgVal}\n`;
-        }
-        text += `\n_Sent via Afnan & Alfia Engagement Invitation_`;
-
-        const waLink = `https://wa.me/919019888387?text=${encodeURIComponent(text)}`;
-        window.open(waLink, '_blank');
-      });
+      
 
 
       /* ==========================================================================
@@ -2887,11 +2752,6 @@
           author: 'Uncle Rashid & Family',
           time: 'Just now',
           text: 'Barakallahu lakuma wa baraka alaikuma! May Allah shower your journey with immense peace, barakah and cherished happiness.'
-        },
-        {
-          author: 'Fatima & Zubair',
-          time: '2 hours ago',
-          text: 'Heartiest congratulations dearest Afnan & Alfia! So thrilled for you both on this beautiful sacred milestone.'
         }
       ];
 
@@ -2899,7 +2759,7 @@
 
       function getWishes() {
         try {
-          const stored = localStorage.getItem('afnan_alfia_wedding_wishes');
+          const stored = localStorage.getItem('afnan_alfiya_wishes_v2');
           if (stored) return JSON.parse(stored);
         } catch (e) {}
         return sampleWishes;
@@ -2907,7 +2767,7 @@
 
       function saveWishes(list) {
         try {
-          localStorage.setItem('afnan_alfia_wedding_wishes', JSON.stringify(list));
+          localStorage.setItem('afnan_alfiya_wishes_v2', JSON.stringify(list));
         } catch (e) {}
       }
 
