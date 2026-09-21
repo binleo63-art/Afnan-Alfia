@@ -1779,11 +1779,12 @@
 
   <!-- Background Audio Player Element -->
   <audio id="bgAudio" loop preload="auto">
+    <source src="wedding_music.mp3" type="audio/mpeg">
     <source src="wedding_music.mp4" type="audio/mp4">
   </audio>
 
   <!-- Floating Audio Control (Zero Emoji, Clean Line SVG) -->
-  <button class="floating-audio-ctrl" id="audioToggleBtn" title="Toggle Wedding Nasheed" aria-label="Toggle Wedding Nasheed">
+  <button class="floating-audio-ctrl" id="audioToggleBtn" title="Toggle Wedding Music" aria-label="Toggle Wedding Music">
     <svg class="disc-icon" viewBox="0 0 24 24">
       <circle cx="12" cy="12" r="10"/>
       <circle cx="12" cy="12" r="3"/>
@@ -2635,7 +2636,7 @@
         curtainModal.classList.add('unveiled');
         navDots.classList.add('visible');
 
-        // Start Wedding Nasheed upon user interaction
+        // Start Wedding Music upon user interaction
         setTimeout(() => {
           toggleAudio(true);
         }, 500);
